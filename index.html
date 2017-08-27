@@ -1,0 +1,78 @@
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RockPaperScissor</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container ">
+
+        <div class="row text-center">
+            <div class="col-md-12">
+                <header class="my-3">Rock Paper Scissor</header>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <section>
+                    <div class="d-inline-block m-2">
+                        <img src='assets/images/rock.png' class='myImg' id="pImg" alt='Image not found'>
+                    </div>
+                    <div class="d-inline-block m-2">
+                        <img src='assets/images/paper.png' class='myImg' id="cImg" alt='Image not found'>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12 my-4 font-weight-bold">
+                <span id="message">Press 'r', 'p' or 's' to begin.</span>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-md-12">
+                <section>
+                    <table class="table table-striped">
+                        <thead class="thead-inverse">
+                            <tr>
+                                <th>Player</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Wins</th>
+                                <td><span id="wins">0</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Loses</th>
+                                <td><span id="loses">0</span></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tied</th>
+                                <td><span id="tied">0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
