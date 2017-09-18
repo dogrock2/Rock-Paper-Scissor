@@ -8,6 +8,13 @@ header{
     width: 300px;	   		
 }
 
-#pImg{
-    /*border: 20px solid red;*/
+.butImg{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+}
+.butImg:hover{
+    height: 48px;
+    width: 48px;
+    border: 2px solid black;
 }

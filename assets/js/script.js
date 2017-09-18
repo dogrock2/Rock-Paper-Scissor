@@ -26,12 +26,22 @@ function init() {
 } //ends init
 
 document.onkeyup = function (event) {
+    playerChoice = event.key;
+    player = rps.indexOf(event.key);
+    main();
+}
+
+$(".butImg").on("click", function(){
+    playerChoice = $(this).attr('vals');
+    player = rps.indexOf(playerChoice);
+    main();
+});
+
+function main(){
 
     msg.style.color = "#000";
     random = (Math.ceil(Math.random() * 3) - 1);
     compChoice = rps[random];
-    playerChoice = event.key;
-    player = rps.indexOf(event.key);
     turn = [random, player];
     a = 0;
     b = 1;
